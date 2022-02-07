@@ -1,0 +1,40 @@
+* Title: db_assignment8.2.sql
+Creator: Meena Field
+Date: February 5 2022
+Description: pysports database script
+*/
+
+>>creat pysports user and grant them all provileges to the phsports database
+CREATE USER  'pysport_user'@'localhost' IDENTIFIED WITH mysql_native_password BY "Mysqlbest@52';
+
+>>grant all privileges to the pysports database to user mysports_user on localhost
+GRANT ALL PRIVILEGES ON  pysports <database_name>.* TO <database_user>@<databse_host>
+
+
+>>drop test user if exists
+DROP TEST IF IT EXIST 'pysports_user'@'localhost';
+
+>> create the team table
+CREATE TABKE team (
+    team_id     INT             NOT NULL        AUTO_INCREMENT,
+    team_name   VARCHAR(75)     NOT NULL,
+    mascot      VARCHAR(75)     NOT NULL,
+    PRIMARY KEY(team_id)
+);
+
+>>create the player table and e the foreign key
+CREATE TABLE player (
+    player_id       INT             NOT NULL        AUTO_INCREMENT,
+    first_name      VARCHAR(75)     NOT NULL,
+    last_name       VARCHAR(75)     NOT NULL,
+    team_id         INT             NOT NULL,
+    PRIMARY KEY (player_id),
+    CONTRAINT fk_team
+    FOREIGN KEY (team_id)
+        REFERENCES tam(team_id)
+);
+
+>> drop tablees if they are present
+DROP TABLE OF EXISTS player;
+
+SELECT team_id FROM team WHERE team_name = 'Team Fields')
