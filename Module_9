@@ -1,0 +1,35 @@
+CREATE TABLE test;
+USE test;
+CREATE TABLE display player record (Player id, 1
+                                    First name, Thorin
+                                    Last name, Oakenshield  
+                                    Team name, Team Gandalf);
+                                    
+                                    (Player id, 2
+                                    First name, Bilbo 
+                                    Last name, Baggins
+                                    Team name, Team Gandalf);
+                                    
+                                    (Player id, 3
+                                    First name,Frodo
+                                    Last name,Baggins
+                                    Team name, Team Gandalf);
+                                    
+                                    (Player id, 4
+                                    First name,Saruman
+                                    Last name, The White
+                                    Team name, Team Sauron);
+                                    
+                                    (Player id, 5
+                                    First name,Angmar
+                                    Last name,Witch-King
+                                    Team name, Team Sauron);
+                                    
+                                    (Player id, 6
+                                    First name,Azog
+                                    Last name,The Defiler
+                                    Team name, Tam Sauron);
+                                    
+                                    End
+                                    
+                                    
