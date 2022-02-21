@@ -16,6 +16,9 @@ Wishlist fields
     .NOT NULL
     .AUTO_INCREMENT
     .PRIMARY KEY
+. user_3
+    .INT
+    .VARCHAR (200)
 .user_id
     .INT
     .NOT NULL
@@ -31,6 +34,9 @@ Book fields
     .INT
     .NOT NULL
     .AUTO_INCREMENT
+.books 9
+    .INT
+    .VARCHAR (500)
 PRIMARY KEY
 .book_name
         .VARCHAR 200
@@ -41,6 +47,9 @@ details V
         .VARCHAR(200)
         .NOT NULL
 Store fields
+.store 1
+    .INT
+    .VARCHAR 200
 .store_id
     .INT
     .NOT NULL
